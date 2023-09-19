@@ -17,7 +17,7 @@ jobs:
       run: nuget restore opc_rest.sln
 
     - name: Setup MSBuild
-      uses: actions/setup-msbuild
+      uses: microsoft/setup-msbuild@v1.1
 
     - name: Build application
       run: msbuild /p:Configuration=Release opc_rest.sln
